@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewElapsed"
+        android:layout_width="126dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="28dp"
+        android:text="경과 시간 없음"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRecord"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="@+id/textViewRecord"
+        app:layout_constraintTop_toBottomOf="@+id/textViewRecord" />
+
+    <TextView
+        android:id="@+id/textViewRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기록 없음"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.254" />
+
+    <EditText
+        android:id="@+id/editTextFoodName"
+        android:layout_width="251dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="먹은 음식"
+        android:textAlignment="center"
+        android:textColor="#A6A6A6"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRecord"
+        app:layout_constraintStart_toStartOf="@+id/textViewRecord"
+        app:layout_constraintTop_toBottomOf="@+id/textViewElapsed" />
+
+    <Button
+        android:id="@+id/buttonRecord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:text="기록하기"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRecord"
+        app:layout_constraintStart_toStartOf="@+id/textViewRecord"
+        app:layout_constraintTop_toBottomOf="@+id/editTextFoodName" />
+
+    <Button
+        android:id="@+id/buttonHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="History"
+        app:layout_constraintEnd_toEndOf="@+id/textViewRecord"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="@+id/textViewRecord"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRecord" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
