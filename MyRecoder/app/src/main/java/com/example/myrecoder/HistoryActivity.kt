@@ -5,7 +5,6 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.myrecoder.databinding.ActivityHistoryBinding
-import com.example.myrecoder.databinding.ActivityMainBinding
 import com.example.myrecoder.model.MyDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -18,7 +17,6 @@ class HistoryActivity : AppCompatActivity() {
     private val binding by lazy { ActivityHistoryBinding.inflate(layoutInflater)}
 
     private val adapter = HistoryAdapter()
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
